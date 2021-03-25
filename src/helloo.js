@@ -1,3 +1,5 @@
+// helloo.js -- created by Almaas Izdihar
+// just for fun
 
 export function render(element,target) {
   document.querySelector(`${target}`).innerHTML += element
@@ -37,7 +39,7 @@ export function renderStyle() {
   delete window.allStyle;
 }
 export function font(url) {
-  if (url.includes("fonts.googleapis.com")) {
+  if (url[0].includes("googleapis")) {
     const fontPreconnect = document.createElement('link');
     fontPreconnect.setAttribute('rel', 'preconnect')
     fontPreconnect.setAttribute('url', 'https://fonts.gstatic.com')

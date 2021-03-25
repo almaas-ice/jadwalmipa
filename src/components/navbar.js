@@ -1,14 +1,14 @@
 import * as hello from '../helloo.js';
 import {data} from '../data/data.js';
 
-const navbar = (()=>{
+const navbar = () => {
   return`
     <nav>
       <span class="nav-menu"><!--soon--></span>
       <span class="title">${data.kelas}</span>
       <span class="dot"></span>
     </nav>`
-})();
+};
 hello.style`
   nav {
     width: 100%;

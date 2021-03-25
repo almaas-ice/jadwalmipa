@@ -22,13 +22,13 @@ switch(new Date().getDay()) {
   case 5:dataToday= new GetData(data.jumat);break;
 }
 
-const today = (()=>{
+const today = () => {
   return`
   <div class="today">
     <h3 class="day">${dataToday.hari}</h3>
     <span class="date">${dataToday.tanggal}-${dataToday.bulan}-${dataToday.tahun}</span>
   </div>`
-})();
+};
 hello.style`
   div.today {
     display: flex;
@@ -52,13 +52,13 @@ hello.style`
 
 window.delayUrl = URL => setTimeout( function() {window.open(URL)}, 400);
 
-const schedule = (()=>{
+const schedule = () => {
   return `<div class="schedule">
   ${dataToday.arrMapel.map( ({name,link}) => `
     <a class="mapel" href="javascript:delayUrl('${link}')" onclick="createRipple()">${name}<img src="assets/arrow forward 18dp.svg"</a>
     `).join('\n')}
   </div>`
-})();
+};
 hello.style`
   div.schedule{
     display: flex;
@@ -92,13 +92,13 @@ hello.style`
   } ---`
 
 
-const main = (()=>{
+const main = () => {
   return`
     <main>
-        ${today}
-        ${schedule} 
+        ${ today() }
+        ${ schedule() } 
     </main>`
-})();
+};
 hello.style`
   main {
     width: 100vw;

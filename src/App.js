@@ -5,13 +5,13 @@ import {navbar} from './components/navbar.js';
 import {main} from './components/main-page.js';
 
 
-const app = (()=>{
+const app = () => {
   return`
     <div>
-      ${navbar}
-      ${main}
+      ${ navbar() }
+      ${ main() }
     </div>`
-})();
+};
 hello.font`https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap`
 hello.style`
   :root {
@@ -27,4 +27,4 @@ hello.style`
 //play!
 hello.normalizeCss();
 hello.renderStyle();
-hello.render(app,'div#app');
+hello.render(app(),'div#app');
