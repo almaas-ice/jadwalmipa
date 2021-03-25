@@ -35,7 +35,7 @@ hello.style`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 48px;
+    margin-bottom: 8vh;
   } ---
   div.today .day {
     color: #4f65ea;
@@ -67,13 +67,13 @@ hello.style`
     align-items: center;
   } ---
   div.schedule a.mapel {
-    width: 242px;
-    height: 54px;
+    width: 226px;
+    height: 52px;
     color: #666;
     font-size: 16px;
     text-decoration: none;
     background-color: #fafafa;
-    margin-bottom: 14px;
+    margin-bottom: 10px;
     border: 1px solid #e6e6e6;
     position: relative;
     overflow: hidden;
@@ -102,7 +102,8 @@ const main = (()=>{
 hello.style`
   main {
     width: 100vw;
-    height:100vh;
+    height: calc(100vh - 64px);
+    margin-top: 64px;
     display: flex;
     flex-direction: column;
     justify-content: center;
