@@ -39,12 +39,6 @@ export function renderStyle() {
   delete window.allStyle;
 }
 export function font(url) {
-  if (url[0].includes("googleapis")) {
-    const fontPreconnect = document.createElement('link');
-    fontPreconnect.setAttribute('rel', 'preconnect')
-    fontPreconnect.setAttribute('url', 'https://fonts.gstatic.com')
-    document.head.appendChild(fontPreconnect)
-  }
   const fontTag = document.createElement('link');
   fontTag.setAttribute('rel', 'stylesheet');
   fontTag.setAttribute('type', 'text/css');
