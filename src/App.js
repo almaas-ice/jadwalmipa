@@ -7,21 +7,20 @@ import {main} from './components/main-page.js';
 
 const app = () => {
   return`
-    <div>
+    <div class="app">
       ${ navbar() }
       ${ main() }
     </div>`
 };
 hello.font`https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap`
+hello.styleVar('vh', window.innerHeight + 'px')
 hello.style`
-  :root {
-    width: 100vw;
-    height: 100vh;
+  div.app {
     font-family: 'DM Sans', sans-serif;
     color: #666;
     text-align: center;
     background-color: #fafafa;
-  } --- `
+  } ---`
 
 
 //play!

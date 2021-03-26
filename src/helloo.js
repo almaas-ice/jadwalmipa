@@ -30,6 +30,10 @@ export function style(eachStyle) {
     window.allStyle += eachStyle;
   }
 };
+export function styleVar(name, property) {
+  document.querySelector(':root').style
+  .setProperty(`--${name}`, property);
+};
 export function renderStyle() {
   const css = document.createElement('style');
   document.head.appendChild(css);

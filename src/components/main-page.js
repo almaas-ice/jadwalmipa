@@ -102,7 +102,7 @@ const main = () => {
 hello.style`
   main {
     width: 100vw;
-    height: calc(100vh - 64px);
+    height: calc(var(--vh) - 64px);
     margin-top: 64px;
     display: flex;
     flex-direction: column;
