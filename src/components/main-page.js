@@ -103,7 +103,7 @@ hello.style`
   main {
     width: 100vw;
     height: calc(var(--vh) - 64px);
-    margin-top: 64px;
+    margin-top: 63px;
     display: flex;
     flex-direction: column;
     justify-content: center;

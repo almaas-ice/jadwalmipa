@@ -2,6 +2,7 @@
 // just for fun
 
 export function render(element,target) {
+  renderStyle()
   document.querySelector(`${target}`).innerHTML += element
 };
 

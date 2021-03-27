@@ -28,7 +28,7 @@ hello.style`
   nav .dot {
     width: 16px;
     height: 16px;
-    border-radius: 50%;
+    border-radius: 10%;
     background-color: #4f65ea;
     margin: auto
   } ---`

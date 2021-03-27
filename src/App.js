@@ -20,10 +20,12 @@ hello.style`
     color: #666;
     text-align: center;
     background-color: #fafafa;
+    height: calc(var(--vh) - 1px);
+    overflow: scroll;
+    margin-bottom: 0;
   } ---`
 
 
 //play!
 hello.normalizeCss();
-hello.renderStyle();
 hello.render(app(),'div#app');
