@@ -17,6 +17,7 @@ hello.style`
     border-bottom: 1px solid #e6e6e6;
     position: fixed;
     top: 0;
+    z-index: 1;
     display: grid;
     grid-template-columns: 64px 1fr 64px;
     align-items: center;

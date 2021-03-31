@@ -22,7 +22,9 @@ hello.style`
     background-color: #fafafa;
     height: calc(var(--vh) - 1px);
     overflow: scroll;
-    margin-bottom: 0;
+  } ---
+  div.app::-webkit-scrollbar {
+    display: none;
   } ---`
 
 
