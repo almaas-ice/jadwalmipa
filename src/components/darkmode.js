@@ -30,7 +30,6 @@ window.renderDarkMode = () => {
   
   function changeIcon(name) {
     document.querySelector('.dot').innerHTML =` <img src="assets/${name} mode 24dp.svg">`
-    console.log(document.querySelector('.dot'))
   }
   function metaColor(color) {
     const metaTag = document.querySelector('meta[name="theme-color"]')
