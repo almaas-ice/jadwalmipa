@@ -37,6 +37,9 @@ hello.style`
     display: flex;
     margin: auto;
   } ---
+  nav .dot:hover {
+    cursor: pointer;
+  }
   nav.dark .dot {
     background-color: rgba(255,255,255,.1);
   } ---
