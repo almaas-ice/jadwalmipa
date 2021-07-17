@@ -85,7 +85,7 @@ const mapel = {
 };
 
 export const datas = {
-  kelas: "11 MIPA",
+  kelas: "12 MIPA",
   sabtu: { hari: "Sabtu",
     jadwal:[
       mapel.presensi,
